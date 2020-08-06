@@ -1,0 +1,464 @@
+{
+	"id": "501fea5b-66f0-827c-422e-38464ddf1f7e",
+	"name": "TesteEmpresta",
+	"description": "",
+	"order": [
+		"a64fb3bd-6299-68f2-b13c-acfc728c2f7f",
+		"96915708-9082-04e7-34e1-44f12a709c67",
+		"2aab1ff6-e3a6-73f4-ada4-74b291fd95ce",
+		"b6a20591-d9f6-ee05-f871-205c42ef3d24",
+		"d86bda00-8454-6893-e39f-bc61b1a542d4",
+		"4a7e792a-6310-5a07-6d1a-c77f6507f3fa",
+		"fd08ac3c-717f-0429-b30e-d89809e7fd06",
+		"d15d11fb-8d61-23a2-7e95-94684760d262"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1596668404310,
+	"owner": "1712877",
+	"public": false,
+	"requests": [
+		{
+			"id": "2aab1ff6-e3a6-73f4-ada4-74b291fd95ce",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/convenios/",
+			"queryParams": [
+				{
+					"key": "chave",
+					"value": "",
+					"equals": true,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "valor_emprestimo",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "instituicoes",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "convenios",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "parcela",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "501fea5b-66f0-827c-422e-38464ddf1f7e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Obtem todos os Convênios",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1596668863824,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "4a7e792a-6310-5a07-6d1a-c77f6507f3fa",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/simular?valor_emprestimo=100000&instituicoes=PAN&convenios=INSS&parcela=48",
+			"queryParams": [
+				{
+					"key": "valor_emprestimo",
+					"value": "100000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "instituicoes",
+					"value": "PAN",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "convenios",
+					"value": "INSS",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "parcela",
+					"value": "48",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "501fea5b-66f0-827c-422e-38464ddf1f7e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Obtem opção de empréstimo, informando todas as restrições",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1596669259793,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "96915708-9082-04e7-34e1-44f12a709c67",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/instituicoes/?chave=OLE",
+			"queryParams": [
+				{
+					"key": "chave",
+					"value": "OLE",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "valor_emprestimo",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "instituicoes",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "convenios",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "parcela",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "501fea5b-66f0-827c-422e-38464ddf1f7e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Obtem Instituição filtrada por chave",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1596668818328,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a64fb3bd-6299-68f2-b13c-acfc728c2f7f",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/instituicoes/",
+			"queryParams": [
+				{
+					"key": "chave",
+					"value": "",
+					"equals": true,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "valor_emprestimo",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "instituicoes",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "convenios",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "parcela",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1596668630021,
+			"name": "Obtem todas as Instituições",
+			"description": "OBtem convênio filtrado por chave",
+			"collectionId": "501fea5b-66f0-827c-422e-38464ddf1f7e",
+			"responses": []
+		},
+		{
+			"id": "b6a20591-d9f6-ee05-f871-205c42ef3d24",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/convenios/?chave=FEDERAL",
+			"queryParams": [
+				{
+					"key": "chave",
+					"value": "FEDERAL",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "valor_emprestimo",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "instituicoes",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "convenios",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "parcela",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "501fea5b-66f0-827c-422e-38464ddf1f7e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Obtem Convênio filtrado por chave",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1596668892114,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d15d11fb-8d61-23a2-7e95-94684760d262",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/simular?valor_emprestimo=100000&instituicoes=PAN,OLE&convenios=INSS,FEDERAL&parcela=48,72,36",
+			"queryParams": [
+				{
+					"key": "valor_emprestimo",
+					"value": "100000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "instituicoes",
+					"value": "PAN,OLE",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "convenios",
+					"value": "INSS,FEDERAL",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "parcela",
+					"value": "48,72,36",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "501fea5b-66f0-827c-422e-38464ddf1f7e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Obtem opções de emprestimo com campos de filtro Multivalorado",
+			"description": "Os valores devem ser separados por vírgula",
+			"descriptionFormat": "html",
+			"time": 1596669496366,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d86bda00-8454-6893-e39f-bc61b1a542d4",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/simular?valor_emprestimo=100000",
+			"queryParams": [
+				{
+					"key": "valor_emprestimo",
+					"value": "100000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "instituicoes",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "convenios",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "parcela",
+					"value": "",
+					"equals": false,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "501fea5b-66f0-827c-422e-38464ddf1f7e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Obtem todas as opções de empréstimo",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1596668996554,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "fd08ac3c-717f-0429-b30e-d89809e7fd06",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/simular",
+			"queryParams": [
+				{
+					"key": "valor_emprestimo",
+					"value": "100000",
+					"equals": true,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "instituicoes",
+					"value": "PAN",
+					"equals": true,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "convenios",
+					"value": "INSS",
+					"equals": true,
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "parcela",
+					"value": "48",
+					"equals": true,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "501fea5b-66f0-827c-422e-38464ddf1f7e",
+			"data": null,
+			"dataMode": "params",
+			"name": "Obtem restrição para Valor Emprestimo não informado",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1596669340995,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
